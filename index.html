@@ -2,69 +2,111 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f9edf0">
-<title>For Shiza ♡</title>
+<meta name="theme-color" content="#160f22">
+<title>For Shiza — From Samad, With Love</title>
 <style>
-:root{--ink:#4b3039;--rose:#b65f78;--blush:#f7e3e8;--paper:#fffaf7;--gold:#caa86b}
-*{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--ink);font-family:Georgia,'Times New Roman',serif;background:radial-gradient(ellipse at 15% 15%,#f5dce4,transparent 42%),radial-gradient(ellipse at 85% 85%,#eadff1,transparent 40%),#fcf5f4;display:grid;place-items:center;padding:24px;overflow-x:hidden}
-main{width:min(700px,100%);text-align:center}.eyebrow{font:11px Arial,sans-serif;text-transform:uppercase;letter-spacing:.22em;color:var(--rose)}
-h1{font-weight:normal;font-size:clamp(36px,8vw,60px);line-height:1.05;margin:16px 0}.intro{font-size:18px;color:#80636d;line-height:1.7;margin:0 auto 28px;max-width:480px}
-.scene{perspective:1000px;min-height:260px;display:grid;place-items:center;margin:18px 0 24px}
-.envelope{position:relative;width:min(330px,86vw);height:205px;cursor:pointer;filter:drop-shadow(0 18px 20px #8f566126);transition:transform .3s}
-.envelope:hover{transform:translateY(-4px)}.back{position:absolute;inset:0;background:#dba5b3;border-radius:8px}
-.letter-peek{position:absolute;left:7%;right:7%;bottom:14px;height:160px;background:var(--paper);border-radius:5px;transition:transform .8s cubic-bezier(.2,.8,.2,1);box-shadow:0 2px 7px #75445120;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:14px}
-.letter-peek span{font-size:28px;color:var(--rose)}.letter-peek small{font-style:italic;color:#80636d;margin-top:8px}
-.flap{position:absolute;inset:0;background:#c87e94;clip-path:polygon(0 0,100% 0,50% 60%);transform-origin:top;transition:transform .7s;z-index:3;border-radius:8px 8px 0 0}
-.pocket{position:absolute;inset:0;background:#e7b8c4;clip-path:polygon(0 0,50% 54%,100% 0,100% 100%,0 100%);z-index:4;border-radius:8px}
-.seal{position:absolute;z-index:5;left:50%;top:49%;transform:translate(-50%,-50%);width:48px;height:48px;border-radius:50%;background:linear-gradient(145deg,#c46b82,#a84663);color:#fff;display:grid;place-items:center;font-size:25px;box-shadow:0 3px 9px #8c425333;transition:opacity .3s}
-.envelope.open .flap{transform:rotateX(180deg);z-index:1}.envelope.open .letter-peek{transform:translateY(-95px)}.envelope.open .seal{opacity:0}
-button{border:0;border-radius:999px;padding:14px 23px;font:600 14px Arial,sans-serif;letter-spacing:.02em;background:var(--rose);color:white;cursor:pointer;box-shadow:0 8px 20px #a04e6825}button:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
-.hint{font:12px Arial,sans-serif;color:#997d85;margin-top:15px}
-.message{display:none;text-align:left;background:#fffaf7ed;border:1px solid #efd5dc;border-radius:22px;padding:clamp(24px,6vw,46px);box-shadow:0 20px 60px #9c536018;animation:rise .8s ease both}
-.message.show{display:block}.message h2{text-align:center;font-weight:normal;font-size:clamp(30px,6vw,42px);margin:0 0 25px}.message p{font-size:17px;line-height:1.9;margin:0 0 17px}.promise{background:#f9e9ed;border-left:3px solid #c77d91;padding:17px 19px;border-radius:0 12px 12px 0;font-style:italic}.sign{text-align:center!important;font-style:italic;font-size:21px!important;margin-top:26px!important}
-.footer{font:12px/1.7 Arial,sans-serif;color:#987d85;margin:22px auto 0;max-width:430px}
-.petal{position:fixed;top:-20px;pointer-events:none;animation:fall linear forwards;opacity:.7}
-@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}@keyframes fall{to{transform:translateY(110vh) rotate(440deg);opacity:0}}
-@media(max-width:480px){body{padding:20px 14px}.scene{min-height:230px}.message p{font-size:16px}}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+:root{--night:#171022;--plum:#34203d;--rose:#ef9eaf;--pink:#f7cbd5;--cream:#fff5ed;--gold:#f2d8a5;--ink:#382538;--muted:#806b7c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--night);color:var(--cream);font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}
+button{font:inherit;cursor:pointer}.sky{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0;background:radial-gradient(ellipse at 15% 20%,#5a315b66,transparent 38%),radial-gradient(ellipse at 85% 70%,#a84f7760,transparent 35%),linear-gradient(145deg,#171022,#26162e 52%,#170f25)}
+.sky:before,.sky:after{content:"";position:absolute;inset:-20%;background-image:radial-gradient(2px 2px at 15% 20%,#fff8e7 50%,transparent 60%),radial-gradient(1px 1px at 68% 33%,#fff 50%,transparent 60%),radial-gradient(2px 2px at 78% 75%,#f5c7d5 50%,transparent 60%),radial-gradient(1px 1px at 34% 80%,#fff 50%,transparent 60%),radial-gradient(1px 1px at 91% 14%,#fff 50%,transparent 60%);background-size:260px 220px;animation:twinkle 6s ease-in-out infinite alternate;opacity:.65}
+.sky:after{background-size:340px 280px;animation-delay:-3s;transform:translateX(40px);opacity:.35}
+.wrap{position:relative;z-index:1;width:min(900px,100%);margin:auto;padding:24px 18px 70px}
+.topline{text-align:center;font:10px Arial,sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#f2c8d4;margin:16px 0 44px}
+.hero{text-align:center;min-height:calc(100svh - 80px);display:flex;align-items:center;justify-content:center;flex-direction:column;padding:18px 0 46px}
+.moon{width:86px;height:86px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff5d8,#f1c7b5 58%,#cc8b9c);box-shadow:0 0 40px #f5c6d366,0 0 100px #f5c6d322;position:relative;margin-bottom:24px;animation:moonFloat 5s ease-in-out infinite}
+.moon:after{content:"";position:absolute;width:80px;height:80px;border-radius:50%;background:#25152f;top:-9px;right:-13px}
+.kicker{font:11px Arial,sans-serif;letter-spacing:.25em;text-transform:uppercase;color:var(--pink)}
+h1{font-size:clamp(48px,10vw,92px);font-weight:normal;line-height:.98;letter-spacing:-.04em;margin:18px 0 16px;background:linear-gradient(110deg,#fff4e8,#f5b7c8 45%,#f6dfad 75%,#fff4e8);background-size:200% auto;color:transparent;background-clip:text;animation:shine 8s linear infinite}
+.sub{font-size:clamp(17px,3vw,21px);line-height:1.7;color:#e8d7e6;max-width:560px;margin:0 auto}
+.date-pill{display:inline-flex;align-items:center;gap:10px;border:1px solid #f5c6d44c;background:#ffffff0b;border-radius:999px;padding:11px 17px;margin:24px 0 28px;color:#f5dbe3;font:12px Arial,sans-serif;letter-spacing:.05em}
+.date-pill span{color:var(--gold)}
+.btn{border:1px solid #f5c4d6aa;border-radius:999px;padding:15px 24px;color:#2d1a2f;background:linear-gradient(110deg,#f7cbd5,#f2d8a5);box-shadow:0 0 30px #f1afc333;transition:transform .25s,box-shadow .25s;font:600 13px Arial,sans-serif;letter-spacing:.04em}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 35px #f1afc355}.tiny{font:11px/1.8 Arial,sans-serif;color:#c5b2c7;margin-top:14px}
+.envelope-stage{height:210px;display:grid;place-items:center;margin:0 0 6px;perspective:900px}
+.envelope{width:min(290px,80vw);height:175px;position:relative;filter:drop-shadow(0 20px 25px #08050e88);cursor:pointer;animation:envelopeFloat 4s ease-in-out infinite}
+.env-back{position:absolute;inset:0;background:#c77b91;border-radius:8px}
+.paper{position:absolute;left:7%;right:7%;bottom:9px;height:143px;background:#fff8f0;color:#9e5a70;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-direction:column;transition:transform .8s cubic-bezier(.2,.8,.2,1);box-shadow:0 3px 12px #4d223522}
+.paper b{font-size:25px;font-weight:normal}.paper small{font-size:12px;font-style:italic;margin-top:8px}
+.env-flap{position:absolute;inset:0;background:#e8a6b7;clip-path:polygon(0 0,100% 0,50% 61%);transform-origin:top;transition:transform .75s;z-index:3}
+.env-pocket{position:absolute;inset:0;background:linear-gradient(145deg,#d58da2,#b96680);clip-path:polygon(0 0,50% 56%,100% 0,100% 100%,0 100%);z-index:4;border-radius:8px}
+.seal{position:absolute;left:50%;top:49%;transform:translate(-50%,-50%);z-index:5;width:47px;height:47px;border-radius:50%;background:radial-gradient(circle at 30% 25%,#e9a4b4,#9b3f61);display:grid;place-items:center;color:#fff1e9;font-size:25px;box-shadow:0 3px 10px #6b274444;transition:opacity .3s}
+.envelope.open .env-flap{transform:rotateX(180deg);z-index:1}.envelope.open .paper{transform:translateY(-95px)}.envelope.open .seal{opacity:0}
+.letter{display:none;color:var(--ink);background:linear-gradient(135deg,#fff9f2,#fff0f2);border-radius:28px;padding:clamp(24px,6vw,58px);box-shadow:0 24px 100px #07040d88;position:relative;overflow:hidden}
+.letter.show{display:block;animation:letterReveal 1s cubic-bezier(.2,.8,.2,1) both}
+.letter:before{content:"";position:absolute;inset:12px;border:1px solid #d8a5b35c;border-radius:20px;pointer-events:none}
+.letter .mini{font:10px Arial,sans-serif;letter-spacing:.25em;text-transform:uppercase;color:#b16c80;text-align:center;margin:4px 0 14px}
+.letter h2{text-align:center;font-weight:normal;font-size:clamp(35px,7vw,56px);color:#693b56;line-height:1.08;margin:0 0 28px}
+.letter p{font-size:clamp(16px,2.4vw,18px);line-height:1.95;margin:0 0 19px;position:relative}
+.letter .highlight{background:#f8e1e6;border-left:3px solid #c77d91;border-radius:0 13px 13px 0;padding:19px 21px;color:#75435a;font-style:italic}
+.letter .sign{text-align:center;font-size:23px;color:#8b4d68;font-style:italic;margin:28px 0 4px}
+.section-title{text-align:center;margin:70px 0 28px}.section-title .kicker{color:#eab5c5}.section-title h2{font-weight:normal;font-size:clamp(32px,6vw,48px);margin:12px 0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{min-height:175px;border:1px solid #f2c7d526;border-radius:20px;padding:22px 18px;background:linear-gradient(145deg,#ffffff0b,#ffffff04);text-align:center;transition:transform .3s,border-color .3s}
+.card:hover{transform:translateY(-6px);border-color:#f2c7d56e}.card .icon{font-size:29px;display:block;margin-bottom:13px}.card h3{font-weight:normal;color:#f4cfda;font-size:20px;margin:0 0 9px}.card p{font:13px/1.7 Arial,sans-serif;color:#cbb8ce;margin:0}
+.endnote{text-align:center;color:#cbb8ce;font:12px/1.9 Arial,sans-serif;max-width:520px;margin:55px auto 0}
+.heart-float{position:fixed;z-index:2;bottom:-30px;pointer-events:none;color:#f4b9cb;animation:floatUp 5s ease-in forwards;text-shadow:0 0 12px #f7bfd355}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+@keyframes twinkle{from{opacity:.25;transform:translateY(0)}to{opacity:.7;transform:translateY(-15px)}}
+@keyframes moonFloat{50%{transform:translateY(-9px)}}@keyframes envelopeFloat{50%{transform:translateY(-7px)}}
+@keyframes shine{to{background-position:200% center}}@keyframes letterReveal{from{opacity:0;transform:translateY(25px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes floatUp{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+@media(max-width:650px){.cards{grid-template-columns:1fr}.card{min-height:auto;padding:22px}.topline{margin-bottom:25px}.hero{min-height:calc(100svh - 55px)}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
 </style>
 </head>
 <body>
-<main>
-  <section id="start">
-    <div class="eyebrow">A little letter, only for you</div>
-    <h1>For Shiza <span style="color:#b65f78">♡</span></h1>
-    <p class="intro">There are things I should have said with more care.<br>This letter is here whenever you're ready.</p>
-    <div class="scene">
+<div class="sky" aria-hidden="true"></div>
+<div class="wrap">
+  <div class="topline">A letter from my heart · for Shiza</div>
+  <section class="hero" id="hero">
+    <div class="moon" aria-hidden="true"></div>
+    <div class="kicker">To the woman I am going to marry</div>
+    <h1>My Shiza,<br>I'm sorry.</h1>
+    <p class="sub">Some words deserve more care than I gave them.<br>This little space is here for you, whenever you're ready.</p>
+    <div class="date-pill">♡ <span>15 November 2026</span> · Our wedding month</div>
+    <div class="envelope-stage">
       <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open the letter">
-        <div class="back"></div>
-        <div class="letter-peek"><span>To Shiza</span><small>from my heart, with sincerity</small></div>
-        <div class="flap"></div><div class="pocket"></div><div class="seal">♡</div>
+        <div class="env-back"></div>
+        <div class="paper"><b>For Shiza</b><small>with honesty, and love</small></div>
+        <div class="env-flap"></div><div class="env-pocket"></div><div class="seal">♡</div>
       </div>
     </div>
-    <button id="openBtn">Open my letter</button>
-    <div class="hint">No pressure. Open it only when you feel ready.</div>
+    <button class="btn" id="openBtn">OPEN MY LETTER&nbsp; ✧</button>
+    <div class="tiny">No pressure to reply. Read only when you feel ready.</div>
   </section>
 
-  <article class="message" id="message">
-    <div class="eyebrow" style="text-align:center;margin-bottom:13px">With honesty, not excuses</div>
-    <h2>I'm truly sorry, Shiza.</h2>
+  <article class="letter" id="letter">
+    <div class="mini">No excuses. Just an apology.</div>
+    <h2>I am sorry<br>for raising my voice.</h2>
     <p>My Shiza,</p>
-    <p>I know I have hurt you, and I know there have been times when you cried because of me. I'm deeply sorry that someone I love has had to feel so much pain because of the way I've acted. You deserved to feel heard, safe, respected, and cared for.</p>
-    <p>I can't undo those moments with a letter, and I don't want to hide behind excuses or ask you to forget what happened. I understand that trust comes from what I consistently do, not from what I promise when I'm afraid of losing you.</p>
-    <div class="promise">Your feelings matter. Your dignity matters. You should never have to choose between being loved and being respected.</div>
-    <p>I want to learn to listen without getting defensive, to understand your hurt instead of minimising it, and to show through my everyday actions that I can be a more thoughtful and dependable partner. I know I have to prove that over time.</p>
-    <p>I'm sorry for the tears I've caused and for the times I wasn't the partner you needed. I miss you, but I know my missing you doesn't erase your hurt. You don't have to make me feel better about what happened.</p>
-    <p>I understand that you don't want to talk or receive messages from me right now. I will respect your space. You don't owe me a reply, forgiveness, or a decision because of this letter.</p>
-    <p>If you ever feel ready to talk, I will listen—properly, patiently, and without trying to argue you out of how you feel. Until then, I will give you the space you've asked for.</p>
-    <p class="sign">I'm sorry, Shiza. ♡<br>Samad</p>
-    <div class="footer" style="text-align:center">This letter asks nothing from you. Take all the time and space you need.</div>
+    <p>Yesterday, I yelled at you, and I am truly sorry. You did not deserve to be spoken to that way—especially by the person who is supposed to be your partner and make you feel safe, respected, and loved.</p>
+    <p>I know that an apology cannot erase how I made you feel. I won't blame my emotions, the situation, or you for my choice to raise my voice. It was my responsibility to handle things differently, and I am sorry that I hurt you.</p>
+    <p class="highlight">You deserve disagreement without disrespect, honesty without harshness, and love that feels safe even when things are difficult.</p>
+    <p>We are meant to begin a new chapter together on 15 November. That date makes me think even more seriously about the kind of husband and partner I want to be—not just on our wedding day, but in the ordinary moments that come after it.</p>
+    <p>I don't want to make big promises just because I am scared of losing you. I want to practise listening without interrupting, taking a pause when I feel overwhelmed, speaking calmly even when we disagree, and coming back to a conversation with care. I know change has to be shown consistently, not simply written in a letter.</p>
+    <p>I love you, and I am sorry for the pain I caused. I understand that you may need time, and you have every right to feel what you feel. You do not have to forgive me quickly or make me feel better about what happened.</p>
+    <p>I also hear that you don't want messages or a conversation from me right now. I will respect your space. This letter is not a request for an immediate reply, and our wedding date is not a reason for me to rush you.</p>
+    <p>If and when you feel ready, I want to listen to you properly—with patience, without defending myself, and without minimising your feelings. Until then, I will give you the room you asked for.</p>
+    <p class="sign">I'm truly sorry, Shiza. ♡<br>Samad</p>
   </article>
-  <div class="footer" id="footer">Made with care. Not to rush your heart, only to say I'm sorry.</div>
-</main>
+
+  <section class="reveal" id="promises">
+    <div class="section-title"><div class="kicker">Not just words</div><h2>What I want to practise</h2></div>
+    <div class="cards">
+      <div class="card"><span class="icon">🌷</span><h3>Listen gently</h3><p>Let you finish, hear your feelings, and try to understand before I respond.</p></div>
+      <div class="card"><span class="icon">🕊️</span><h3>Pause, not shout</h3><p>When emotions rise, take a respectful break and return to the conversation calmly.</p></div>
+      <div class="card"><span class="icon">🤍</span><h3>Earn trust daily</h3><p>Show respect and care through consistent actions, especially when things are hard.</p></div>
+    </div>
+  </section>
+  <div class="endnote reveal">This page is not asking you to forget or to answer. Your feelings and your time matter. I am sorry, and I want my actions to do the talking.</div>
+</div>
 <script>
-const env=document.getElementById('envelope'), btn=document.getElementById('openBtn'), start=document.getElementById('start'), msg=document.getElementById('message'), foot=document.getElementById('footer');
-function openLetter(){if(msg.classList.contains('show'))return;env.classList.add('open');btn.disabled=true;btn.textContent='Opening…';setTimeout(()=>{start.style.display='none';msg.classList.add('show');foot.style.display='none';window.scrollTo({top:0,behavior:'smooth'});},650);}
-btn.addEventListener('click',openLetter);env.addEventListener('click',openLetter);env.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openLetter();}});
+const env=document.getElementById('envelope'),btn=document.getElementById('openBtn'),hero=document.getElementById('hero'),letter=document.getElementById('letter');
+let opened=false;
+function floatHearts(){const symbols=['♡','✧','♥'];for(let i=0;i<16;i++){setTimeout(()=>{const e=document.createElement('span');e.className='heart-float';e.textContent=symbols[Math.floor(Math.random()*symbols.length)];e.style.left=(Math.random()*96+2)+'vw';e.style.fontSize=(12+Math.random()*20)+'px';e.style.animationDuration=(4+Math.random()*3)+'s';document.body.appendChild(e);setTimeout(()=>e.remove(),7500)},i*100)}}
+function openLetter(){if(opened)return;opened=true;env.classList.add('open');btn.textContent='A LETTER FROM MY HEART…';btn.disabled=true;floatHearts();setTimeout(()=>{hero.style.display='none';letter.classList.add('show');document.getElementById('promises').scrollIntoView({behavior:'smooth',block:'start'});},650)}
+btn.addEventListener('click',openLetter);env.addEventListener('click',openLetter);env.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openLetter()}});
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 </script>
-</body></html>
+</body>
+</html>
